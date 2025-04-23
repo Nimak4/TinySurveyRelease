@@ -5,16 +5,16 @@ import cookieParser from 'cookie-parser';
 import {index} from './routes/index.mjs';
 import {gottopic} from './routes/gottopic.mjs';
 import {setoptions} from './routes/setoptions.mjs';
-import {recordselection} from './routes/recordselection.mjs';
-import {displayresults} from './routes/displayresults.mjs';
+import {recordselection} from './routes/recordselection.mjs'; 
+import {displayresults} from './routes/displayresults.mjs'; 
 
-// Create the express application
+// Create the express application 
 const app = express();
 
 // Select the middleware to decode incoming posts
 app.use(express.urlencoded({ extended: false }));
 
-// Add the cookie parser middleware
+// Add the cookie parser middleware 
 app.use(cookieParser());
 
 // Select ejs middleware
